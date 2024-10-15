@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-icon name="call" slot="start"></ion-icon>
+      <ion-label>Phone</ion-label>
+      <ion-note slot="end">+55 11 9999-9999</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail" slot="start"></ion-icon>
+      <ion-label>Email</ion-label>
+      <ion-note slot="end">{{"fredcafe@gmail.com"}} </ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
