@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -25,7 +25,7 @@
 .btn {
   width: 80%;
   padding: 10px;
-  margin: 10px 0;
+  margin: 0;
   border: none;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -34,4 +34,40 @@
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  transition: transform .5s; /* Adiciona a transição */
+
+  .grao {
+    margin: 0px;
+    width: 40px;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: transform .5s; /* Adiciona a transição */
+  }
+
+  .text {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}
+
+.btn:hover {
+  background: #207c0b;
+  transform: scale(1.1); /* Aplica a escala no hover */
+
+  .grao {
+    transform: rotate(90deg); /* Aplica a rotação no hover */
+  }
+
+  .text {
+    transform: fontSize(1.2em); /* Aplica a escala no hover */
+    color: #fff; /* Define a cor da fonte no hover */
+  }
 }
